@@ -24,7 +24,7 @@ is_release_build = os.environ.get('READTHEDOCS') == 'True'
 project = 'Game Manual 0'
 author = 'Game Manual 0 Contributors'
 
-copyright_year = 2019
+copyright_year = 2020
 
 copyright = str(copyright_year) + ", " + str(author)
 
@@ -48,10 +48,10 @@ version = release
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'sphinx.ext.todo',
     'sphinx.ext.imgmath',
     'sphinx.ext.graphviz',
-    'notfound.extension',
+    'sphinx_tabs.tabs', 
+    'sphinx_sitemap'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -87,8 +87,9 @@ pygments_style = None
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'sphinx_rtd_theme'
-html_logo = "assets/gm0-logo.png"
+html_theme = 'custom_sphinx_rtd_theme'
+html_theme_path = ["_themes", ]
+html_logo = "assets/gm0-logo-colored.png"
 html_favicon = "assets/gm0-logo.ico"
 
 # Theme options are theme-specific and customize the look and feel of a theme
@@ -96,10 +97,7 @@ html_favicon = "assets/gm0-logo.ico"
 # documentation.
 #
 html_theme_options = {
-    'collapse_navigation': True,
-	'sticky_navigation': False,
-	'titles_only': True,
-    'style_external_links': True,
+    'logo_only': True,
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
