@@ -1,7 +1,7 @@
 ==========
 Tools List
 ==========
-Here are a selection of necessary and helpful tools for your team.
+Here are a selection of necessary and useful tools for your team.
 You'll obviously need to purchase the basics such as the right screwdriver,
 hex keys, and drill bits.
 For a bit more precision and the ability to dabble in custom,
@@ -24,7 +24,7 @@ Necessary
     * 7 mm hex nut driver/wrench (goBILDA)
 * Drill and drill bits
 * Pliers, needle-nose and locking
-* Metal file (sandpaper not recommended)
+* Metal file (sandpaper not recommended, you're not working with wood)
 * Quick lock clamps (2+) or vise
 * Hammer and mallet
 * Centerpunch
@@ -38,11 +38,14 @@ Necessary
 Helpful
 =======
 
-* Bandsaw (**cannot cut through steel shafts**)
+* Bandsaw
+
+..  caution::   A bandsaw **cannot** cut through steel shafts!
+
 * Impact driver
 * Drill press
 * Miter saw with non-ferrous metal cutting blade
-* Dremel (use sparingly)
+* Dremel (use sparingly; Dremel =/= bandsaw)
 * Grip tape
 * Caliper
 * Soldering iron
@@ -53,6 +56,6 @@ Helpful
 * 3d printer
 
 A 3d printer, CNC machine, or laser cutter greatly increases your ability to
-create custom robot designs.  For most teams, buying a CNC or laser cutter is
+create custom robot designs. For most teams, buying a CNC or laser cutter is
 way beyond their budget, but you might be able to get access to one through
-school, local college,  or nearby makerspace.
+school, local college, or nearby makerspace.

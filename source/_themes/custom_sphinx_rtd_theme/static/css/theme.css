@@ -2,7 +2,7 @@ header {
     margin-left: -3.236em;
     margin-right: -3.236em;
     margin-bottom: 10px;
-    background: #555555;
+    background: #ffffff00;
     flex-shrink: 0;
 }
 
@@ -51,9 +51,10 @@ header {
     /*border-top-left-radius: 2px;*/
     /*border-top-right-radius: 2px;*/
     /*-webkit-transition: .2s all;*/
-    transition: 1s all;
+    transition: 2s all;
     font-weight: 700;
-    color: #fff;
+    color: #000;
+    font-family: 'Lato', sans-serif
 }
 
 .tabs-container ul li:first-of-type a {
@@ -121,7 +122,7 @@ abbr[title] {
 }
 
 b, strong {
-    font-weight: 700
+    font-weight: 600
 }
 
 blockquote {
@@ -198,13 +199,6 @@ li {
 
 dd {
     margin: 0
-}
-
-img {
-    border: 0;
-    -ms-interpolation-mode: bicubic;
-    vertical-align: middle;
-    max-width: 100%
 }
 
 svg:not(:root) {
@@ -4461,8 +4455,8 @@ body, html {
 }
 
 body {
-    font-family: Lato, proxima-nova, Helvetica Neue, Arial, sans-serif;
-    font-weight: 400;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 300;
     color: #404040;
     min-height: 100%;
     background: #edf0f2
@@ -4539,25 +4533,57 @@ a.wy-text-neutral:hover {
 .rst-content .toctree-wrapper p.caption, h1, h2, h3, h4, h5, h6, legend {
     margin-top: 0;
     font-weight: 700;
-    font-family: Roboto Slab, ff-tisa-web-pro, Georgia, Arial, sans-serif
+    font-family: 'Fira Sans', sans-serif;
 }
 
 p {
-    line-height: 24px;
-    font-size: 16px;
-    margin: 0 0 24px
+    line-height: 28px;
+    font-size: 17px;
+    margin: 0px;
+    font-weight: 400;
+    letter-spacing: -0.0px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 h1 {
-    font-size: 175%
+    font-size: 175%;
+    font-style: italic;
+    font-weight: 800;
+    font-style: normal;
+    font-variant-caps: small-caps;
+    text-transform: normal;
+    background: #555555;
+    color: #ffffff;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: 2px;
+    text-align: right;
+    letter-spacing: 1pt;
+
 }
 
 .rst-content .toctree-wrapper p.caption, h2 {
-    font-size: 150%
+    font-size: 140%;
+    font-weight: 600;
+    font-style: initial;
+    font-variant-caps: unset;
+    text-transform: initial;
+    margin-bottom: -0.1px;
+    margin-top: 40px
 }
 
 h3 {
-    font-size: 125%
+    font-size: 120%;
+    font-weight: 500;
+    font-style: normal;
+    font-variant-caps: normal;
+    text-transform: initial;
+    margin-top: 20px;
 }
 
 h4 {
@@ -4787,7 +4813,7 @@ html {
 
 .wy-menu-vertical li.current a {
     color: grey;
-    border-right: 1px solid #c9c9c9;
+    border-right: 1px solid #00000000;
     padding: .4045em 2.427em
 }
 
@@ -4916,12 +4942,12 @@ html {
 
 .wy-menu-vertical a {
     display: inline-block;
-    line-height: 18px;
+    line-height: 30px;
     padding: .4045em 1.618em;
     display: block;
     position: relative;
     font-size: 90%;
-    color: #d9d9d9
+    color: #000000;
 }
 
 .wy-menu-vertical a:hover {
@@ -5057,22 +5083,27 @@ html {
 }
 
 .wy-nav-side {
-    position: fixed;
+    position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     padding-bottom: 2em;
-    width: 300px;
+    width: 400px;
     overflow-x: hidden;
     overflow-y: hidden;
-    min-height: 100%;
+    min-height: fit-content;
+    padding-left: 50px;
     color: #9b9b9b;
-    background: #343131;
-    z-index: 200
+    background: #fcfcfc;
+    z-index: 200;
+    font-family: 'Lato', sans-serif;
+    font-variant-caps: all-small-caps;
+    font-size: 140%;
+    letter-spacing: 2pt;
 }
 
 .wy-side-scroll {
-    width: 320px;
+    width: 350px;
     position: relative;
     overflow-x: hidden;
     overflow-y: scroll;
@@ -5122,7 +5153,7 @@ html {
 }
 
 .wy-nav-content-wrap {
-    margin-left: 300px;
+    margin-left: 500px;
     background: #fcfcfc;
     min-height: 100%
 }
@@ -5131,7 +5162,7 @@ html {
     padding: 1.618em 3.236em;
     padding-top: 0;
     height: 100%;
-    max-width: 800px;
+    max-width: 700px;
     margin: auto
 }
 
@@ -5418,7 +5449,7 @@ footer p {
     }
 }
 
-.rst-content img {
+.rst-content {
     max-width: 100%;
     height: auto
 }
@@ -5964,4 +5995,32 @@ span[id*=MathJax-Span] {
     font-weight: 700;
     src: url(fonts/Roboto-Slab-Bold.woff2?9984f4a9bda09be08e83f2506954adbe) format("woff2"), url(fonts/Roboto-Slab-Bold.woff?bed5564a116b05148e3b3bea6fb1162a) format("woff");
     font-display: swap
+}
+
+#copperforge-logo {
+    width: 150px;
+}
+
+@media screen and (max-width: 768px) {
+    .header-bar {
+        display:none;
+    }
+}
+
+/*
+Styling for images and captions (centered captions) 
+Both images and captions 400px by default
+*/ 
+
+img:not(.math) {
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+    vertical-align: middle;
+    width: 400px;
+    height: auto;
+}
+
+.caption:not(.wy-menu) {
+    width: 400px;
+    text-align: left;
 }

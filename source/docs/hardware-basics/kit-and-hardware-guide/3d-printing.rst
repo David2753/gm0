@@ -1,10 +1,10 @@
 ===========
-3D printing
+3D Printing
 ===========
 Advantages of 3D Printing
 =========================
 * **3D printing allows teams to have customizable strain relief on wires and
-  connections**.
+  connections. This is a great project and well worth your time.**
 * 3D printing allows for customizable sizing and perfect optimization;
   for example, teams can print a spool of the exact diameter needed for optimal
   speed.
@@ -64,8 +64,8 @@ Common Filament Types
   TPU also has very high layer bonding strength compared to other filament
   types, making it suitable for high load applications that do not need to be
   stiff.
-  Must print TPU on a printer with a direct extruder,
-  will not work on bowden extruders.
+  TPU must be printed on a printer with a direct extruder.
+  It will not work on bowden extruders.
   A bowden extruder is mounted on the frame of the 3D printer and is connected
   to the nozzle with a flexible tube that guides the filament.
   A direct extruder will be mounted directly on the nozzle assembly,
@@ -73,12 +73,16 @@ Common Filament Types
 
 3D Printing Design Guide
 ========================
+Here is a quick guide on designing 3D printed parts that we hope is helpful
+for teams who may be unfamiliar with 3D parts.
+
 The first consideration when designing 3D printed parts is print orientation.
 This refers to the side that contacts the print bed.
 Preferably, the part should have a flat bottom to maximize contact with the
 print bed.
-Maximizing contact with the print bed will make sure the part doesn’t
-delaminate or warp from the bed and increase print quality.
+
+.. tip::  Maximizing contact with the print bed will make sure the part doesn’t
+  delaminate or warp from the bed and increase print quality.
 
 If it is impossible for the part to have a flat side to print on,
 a simple solution is to split the part into multiple parts along a plane.
@@ -94,10 +98,9 @@ is wasted.
     :alt: A 3D printed gearbox, printed in 2 parts, cut along a plane
     :scale: 25%
 
-Another tip with the bottom side of a printed part is to not chamfer or round
-anything on the perimeter of the first layer.
-Chamfering or rounding will increase the chances of the part warping especially
-on unheated print plates.
+.. tip::   Don't chamfer or round anything on the perimeter of the first layer
+  on the bottom face of the part. Chamfering or rounding will increase the
+  chances of the part warping, especially on unheated print plates.
 
 Draft Angle
 -----------
@@ -114,7 +117,7 @@ warping.
 
 Stress Vectors
 --------------
-Perhaps the most important consideration are stress vectors.
+Perhaps the most important consideration is stress vectors.
 3D printed parts are inherently stronger on two axes and weaker on one axis.
 The weaker axis comes from the layering action that defines FDM 3D printing.
 A common fix to this is to simply increase the print temperature up to a
@@ -124,13 +127,15 @@ The point to get across is to try to increase strength by optimizing sections
 of the part on the plane they are being printed on.
 For instance, this assembly below was responsible for hanging the entire robot,
 so it had to be the maximum strength possible for a 3D printed part.
-It might seem counterintuitive to split up a part into multiple parts to
-increase strength, but there is a logic behind it.
+
+.. tip::  It might seem counterintuitive to split up a part into multiple parts to
+  increase strength, but there is a logic behind it.
+
 The part could have been easily printed as a single part,
 but it would be fairly weak when stresses are exerted in the upward direction.
 Splitting the part and creating new flat surfaces to print on will strengthen
-each axis. If one small part failed, the robot might still be able to somewhat
-function.
+each axis. *If one small part failed, the robot might still be able to somewhat
+function.*
 This would be preferable to the entire piece failing at once.
 In this example the side pieces were printed as separate parts on a
 complementary axis to strengthen the assembly.
