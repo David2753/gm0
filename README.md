@@ -2,7 +2,7 @@ Game Manual 0
 =============
 
 Welcome to Game Manual 0 (GM0)!
-This repository contains the source of Game Manual 0.
+This repository contains the source of [Game Manual 0](https://gm0.copperforge.cc/en/stable/).
 
 Building Game Manual 0
 ======================
